@@ -1,0 +1,76 @@
+GIT AND GITHUB
+    Git is a version control tool that helps to track changes in our code 
+    It is used to track the history of our code
+
+GITHUB
+    A website where we host our repositories
+    It is a website that allows the developers to store and manage their code using GIT
+    We usually upload them in the form of a folder, these folders are knows as 
+    repositories
+
+    Any changes in the github are called commit
+    It is a two step process
+    we first add something, then we commit to make changes
+    If we add the commit button we get two types of codes
+    1. green:- the code changes, that we added recently
+    2. red:- that code changes, that we deleted or modified
+        Note:- What is the difference between Modify and delete
+
+USING GIT
+    Git can be used via command line
+    It can also be used via code editors
+    MAC OS has already by default git installed
+    To check if git is installed or not we can use a command <git --version>
+    To know the differnt commands of Git, we can simply type <git> in the command line
+
+
+GIT CONFIGURING GIT
+    Configuring git, means to set up some basic things
+    First we setup our username and our email
+    this implies that git should know in advance that by which name its going to commit 
+    changes and on which account
+
+    to setup name
+
+    git config --global user.name "iamfazill"
+    git config --global user.email "fazilshehri@gmail.com"
+
+    git config --list
+
+BASIC GIT COMMANDS
+    1. CLONE :- Cloning a repository to our local machine 
+        copying code or project in our local machine
+        git clone <some Link>
+    2.status :- Displays the status of the code 
+        git status
+
+        File Status Life Cycle
+            1. Untracked file:- Git has no knowledge about these files
+                we need to add the files so that the git can track them
+
+            2. Unmodified file:- when file is added, it is in the unmodified state for the git
+            3. Modify:- Now if we made any change to the file, it goes to the modified
+                state
+            4. When we modify any file, there is always a two step process to finalize that
+                modification.
+                1. First we <Stage> our file
+                2. second we commit the file. 
+                Note:- once commited, the file comes to the unmodified stage again
+    When we already have some modified files, when we add them, there states changes
+    from modified to staged, means they are ready to be committed
+
+    Add:- adds new or changed files in our working directory to the git staging already
+        git add <fileName>
+    Commit:- It is the record of changes
+        git commit -m "Some Message"
+    Push:- Upload the local repo content to remote app
+        git push origin main
+
+    In short, any change to finalize, it is a two step process
+        1. Add the file
+        2. commit the file
+
+    git add . => adds all the untracked or modified files to the staging area
+
+
+    
